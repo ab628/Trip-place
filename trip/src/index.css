@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+   min-height: 100vh;
+    /* width: 100vw; */
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  font-size: 3rem;
+  margin: 6vh;
+  border: 7px dashed rgb(48, 48, 166);
+  border-radius: 20px;
+  padding: 1vh 5vw;
+
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+} 
+.card{
+  width: 400px;
+  height: max-content;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: rgb(0, 0, 0, 0.24) 0px 3px 8px; 
+}
+        
+.img{
+  transition: transform 0.4s ; /* Smooth transition */
+}
+/* Zoom effect on hover */
+.img :hover {
+  transform: scale(1.03); 
+  cursor: pointer;
+}
+
+.image {
+  width: 380px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+ 
+}
+
+
+.tour-info{
+  margin: 20px 5px;
+}
+.tour-price{
+  color: #1faa59;
+  font-size: 1.3rem;
+}
+.tour-city{
+  font-size: 1.5rem;
+}
+.read-more{
+ color: #12b0e8;
+ cursor: pointer;
+}
+
+.btn{
+  display: flex;
+  /* flex-direction: column; */
+  gap: 8rem;
+}
+
+.btn1{
+  margin-top: 18px;
+  padding: 8px 11px;
+  /* padding: 10px 80px; */
+  border: 1px solid #b4161b;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #b4161b21;
+}
+.btn1:hover{
+  background-color: red;
+  color: white;
+  transition: all 0.5s;
+}
+.btn2{
+  margin-top: 18px;
+  padding: 8px 11px;
+  /* padding: 10px 80px; */
+  border: 1px solid #b4161b;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #b4161b21;
+}
+.btn2:hover{
+  background-color: red;
+  color: white;
+  transition: all 0.5s;
+}
+
+.refresh{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.refresh-btn{
+  margin-top: 18px;
+  padding: 10px 80px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.refresh-btn:hover{
+  background-color: white;
+  color: black;
+  transition: all 0.2s;
+}
